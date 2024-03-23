@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <style>
+        .typewriter h1 {
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: 5px solid orange;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: 3px;
+            /* Adjust as needed */
+            animation:
+                typing 1.5s steps(100, end),
+                blink-caret .75s step-end infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0px
+            }
+
+            to {
+                width: 500px
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="typewriter" style="width: 500px;">
+        <h1>GMAT | GRE | TOEFL | SAT</h1>
+      </div>
+</body>
+
+</html>
